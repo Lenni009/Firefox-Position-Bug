@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+      <nav>
+        <ul>
+          <li>Click the dropdown on the right</li>
+        </ul>
+        <ul>
+          <li>
+            <details class="dropdown">
+              <summary>Dropdown</summary>
+              <ul>
+                <li><a href="#">Solid</a></li>
+                <li><a href="#">Liquid</a></li>
+                <li><a href="#">Gas</a></li>
+                <li><a href="#">Plasma</a></li>
+              </ul>
+            </details>
+          </li>
+        </ul>
+      </nav>
+      </header>
+      <main>
+        <p>Expected: Dropdown width is the same as the details element width</p>
+        <p>Actual: Dropdown width is full screen width</p>
+        <p>When the dropdown is clicked, this text should not be covered</p>
+      </main>
+    </div>
+  </body>
+</html>
